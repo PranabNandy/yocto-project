@@ -1,48 +1,48 @@
 Poky source tree
 ------------------
 
-bitbake		-	Holds all Python scripts used by the bitbake command
+-	bitbake		-	Holds all Python scripts used by the bitbake command
 			bitbake/bin is placed into the PATH environmental variable so bitbake can be found
 
-documentation   -       All documentation sources for the Yocto Project documentation
+-	documentation   -       All documentation sources for the Yocto Project documentation
 			Can be used to generate nice PDFs
 
-meta		-	Contains the oe-core metadata
+-	meta		-	Contains the oe-core metadata
 			
-meta-poky	-	Holds the configuration for the Poky reference distribution
+-	meta-poky	-	Holds the configuration for the Poky reference distribution
 			local.conf.sample, bblayers.conf.sample are present here
 
-meta-skeleton	- 	Contains template recipes for BSP and kernel development
+-	meta-skeleton	- 	Contains template recipes for BSP and kernel development
 
 
-meta-yocto-bsp  -	Maintains several BSPs such as the Beaglebone, EdgeRouter, 
+-	meta-yocto-bsp  -	Maintains several BSPs such as the Beaglebone, EdgeRouter, 
 			and generic versions of both 32-bit and 64-bit IA machines.
 
-scripts		-	Contains scripts used to set up the environment, development tools,
+-	scripts		-	Contains scripts used to set up the environment, development tools,
 			and tools to flash the generated images on the target.
 
-LICENSE		-	The license under which Poky is distributed (a mix of GPLv2 and MIT).
+-	LICENSE		-	The license under which Poky is distributed (a mix of GPLv2 and MIT).
 
 
 
 Other directories
 -----------------
 
-downloads	-	downloaded upstream tarballs/git repositories of the recipes used in the build
+-	downloads	-	downloaded upstream tarballs/git repositories of the recipes used in the build
 
-sstate-cache	-	shared state cache
+-	sstate-cache	-	shared state cache
 
-tmp		-	Holds all the build system output
+-	tmp		-	Holds all the build system output
 
 			tmp/deploy/images/machine - Images are present here
 			
-cache		-	cache used by the bitbake's parser
+-	cache		-	cache used by the bitbake's parser
 
 
 Yocto/OpenEmbedded Build System Workflow
 -----------------------------------------
 
-1. Developers specify architecture, policies, patches and configuration details.
+1. 	Developers specify architecture, policies, patches and configuration details.
 
 2. The build system fetches and downloads the source code from the specified location
 	supports downloading tarballs and source code repositories systems such as git/svn
@@ -95,11 +95,11 @@ Yocto Build System can take a lot of disk space during build. But bitbake provid
 
 You can tell bitbake to delete all the source code, build files after building a particular recipe by adding the following line in local.conf file
 
-INHERIT += "rm_work"
+	INHERIT += "rm_work"
 
 Disadvantage: Difficult to debug while build fails of any recipe.
 
 For example, if you want to exclude bitbake deleting source code of a particular package, you can add it in RM_WORK_EXCLUDE += "recipe-name"
 
-E.g: RM_WORK_EXCLUDE += "core-image-minimal"
+	E.g: RM_WORK_EXCLUDE += "core-image-minimal"
 
