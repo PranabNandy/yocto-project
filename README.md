@@ -1,4 +1,4 @@
-# yocto-projec
+# yocto-project
 
 ## Execution of build qemux86-64 image on QEMU [Demo Video](https://www.youtube.com/watch?v=lqIe4PWa61g&ab_channel=PranabNandy)
 
