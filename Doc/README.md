@@ -3,9 +3,9 @@ Metadata
 
 Poky = Bitbake + Metadata
 
-Metadata is collection of
-	-	Configuration files (.conf)
+### Metadata is collection of
 	-	Recipes (.bb and .bbappend)
+	-	Configuration files (.conf)
 	-	Classes (.bbclass)
 	-	Includes (.inc)
 	
@@ -19,22 +19,22 @@ Yocto: A recipe is a set of instructions that is read and processed by the bitba
 
 Extension of Recipe: .bb
 
-A recipe describes:
+### A recipe describes:
+
     where you get source code
     which patches to apply
     Configuration options
     Compile options (library dependencies)
     Install
     License
-
-a software component
+    a software component
 
 
 Examples of Recipes
 ----------------------
 
-dhcp_4.4.1.bb
-gstreamer1.0_1.16.1.bb
+	dhcp_4.4.1.bb
+	gstreamer1.0_1.16.1.bb
 
 
 Configuration Files
@@ -73,9 +73,9 @@ They are usually placed in classes directory inside the meta* directory
 Example of classes
 -------------------
 
-cmake.bbclass - Handles cmake in recipes
-kernel.bbclass - Handles building kernels. Contains code to build all kernel trees
-module.bbclass - Provides support for building out-of-tree Linux Kernel Modules
+	cmake.bbclass - Handles cmake in recipes
+	kernel.bbclass - Handles building kernels. Contains code to build all kernel trees
+	module.bbclass - Provides support for building out-of-tree Linux Kernel Modules
 
 Layers
 --------
@@ -90,19 +90,19 @@ Typical naming convention: meta-<layername>
 
 Poky has the following layers:
 
-meta, meta-poky, meta-selftest, meta-skeleton, meta-yocto-bsp
+	meta, meta-poky, meta-selftest, meta-skeleton, meta-yocto-bsp
 
 Why Layers
 -----------
 
- Layers provide a mechanism to isolate meta data according to functionality, for instance BSPs, distribution configuration, etc.
+Layers provide a mechanism to isolate meta data according to functionality, for instance BSPs, distribution configuration, etc.
 
 You could have a BSP layer, a GUI layer, a distro configuration, middleware, or an application
 
 Putting your entire build into one layer limits and complicates future customization and reuse. 
 
-Example: meta-poky          -- Distro metadata
-         meta-yocto-bsp     -- BSP    metadata
+	Example: meta-poky          -- Distro metadata
+        	 meta-yocto-bsp     -- BSP    metadata
 
 Layers allow to easily to add entire sets of meta data and/or replace sets with other sets.
 meta-poky, is itself a layer applied on top of the OE-Core metadata layer, meta
