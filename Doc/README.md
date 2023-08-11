@@ -1,4 +1,4 @@
-Metadata
+1.Metadata
 --------------
 
 Poky = Bitbake + Metadata
@@ -10,7 +10,7 @@ Poky = Bitbake + Metadata
 	-	Includes (.inc)
 	
 
-Recipes
+1.1.Recipes
 ---------
 
 Non-Yocto: A recipe is a set of instructions that describe how to prepare or make something, especially a dish
@@ -37,7 +37,7 @@ Examples of Recipes
 	gstreamer1.0_1.16.1.bb
 
 
-Configuration Files
+1.2.Configuration Files
 --------------------
 
 Files which hold
@@ -57,7 +57,7 @@ Files which hold
 	-	User Configuration Options (local.conf)
 
 
-classes
+1.3.classes
 ---------
 
 Class files are used to abstract common functionality and share it amongst multiple recipe (.bb) files
@@ -77,7 +77,7 @@ Example of classes
 	kernel.bbclass - Handles building kernels. Contains code to build all kernel trees
 	module.bbclass - Provides support for building out-of-tree Linux Kernel Modules
 
-Layers
+2.Layers
 --------
 
 A collection of related recipes.
@@ -128,7 +128,7 @@ Where to get other layers
 	https://layers.openembedded.org/layerindex/branch/master/layers/
 	
 	
-Image
+3.Image
 -----------
 
 An image is the top level recipe, it has a description, a license and inherits the core-image class
@@ -145,7 +145,7 @@ Command to check the list of available image recipes
 
 	$ ls meta*/recipes*/images/*.bb
 
-Packages
+4.Packages
 -------------
 
 Non-Yocto: Any wrapped or boxed object or group of objects.
