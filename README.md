@@ -1,4 +1,6 @@
-# yocto-project
+# yocto-projec
+
+## Execution of build qemux86-64 image on QEMU [Demo Video](https://www.youtube.com/watch?v=lqIe4PWa61g&ab_channel=PranabNandy)
 
  ## $ Ubuntu 20.04.6 LTS and pocky dunfell branch
      $ sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
