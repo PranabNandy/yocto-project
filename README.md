@@ -13,4 +13,6 @@
      $ ssource poky/oe-init-build-env [ build_directory ]
 
      $ bitbake core-image-minimal
+     
+     $ runqemu qemux86_64 nographic
 
