@@ -46,7 +46,9 @@ meta-yocto-bsp:
     	does not support any advanced features or anything not in the upstream mainline kernel
     	e.g. no capes, no power management, no hardware acceleration, no 3D, no PRU, etc.
     	
-    	The purpose of this BSP is to have some basic out-of-box experience for the select hardware 		platforms within Poky to evaluate the Yocto Project and OpenEmbedded framework, but not the 		specific hardware platforms
+    	The purpose of this BSP is to have some basic out-of-box experience for the select hardware
+        platforms within Poky to evaluate the Yocto Project and OpenEmbedded framework, but not the
+	specific hardware platforms
 
 meta-ti
 ----------
