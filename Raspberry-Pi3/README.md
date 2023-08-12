@@ -2,8 +2,11 @@ Booting Process in Raspberry Pi3
 ---------------------------------
 
 Broadcom BCM2837:
+
 	CPU 	-	1.2GHz 64-bit quad-core ARMv8 Cortex-A53
+ 
 	GPU 	-	Broadcom VideoCore IV
+ 
 	SDRAM	-	1024 MiB
 
 When you power the device
