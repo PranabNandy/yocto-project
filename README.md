@@ -2,6 +2,13 @@
 
 ## Execution of build qemux86-64 image on QEMU [Demo Video](https://www.youtube.com/watch?v=lqIe4PWa61g&ab_channel=PranabNandy)
 
+
+#### Quick Tips :
+     Create a VM in Linode
+     Add the ssh public and private key from your local computer
+     chmod 400 ~/.shh/id_rsa     // disable the global access of private key
+     Now you can use ssh in VM
+     
  ## $ Ubuntu 20.04.6 LTS and pocky dunfell branch
      $ sudo apt-get install gawk wget git-core diffstat unzip texinfo gcc-multilib \
      build-essential chrpath socat cpio python python3 python3-pip python3-pexpect \
